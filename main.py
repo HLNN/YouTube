@@ -26,7 +26,7 @@ class Youtube:
                 youtube = Download(video_id, self.workingPath)
                 youtube.main()
         os.system("mv *.mp4 '{lastpath}'/".format(lastpath=self.workingPath))
-        os.system("zip -r cupt.zip ./*")
+        os.system("zip -r youtube.zip ./*")
 
 
 if __name__ == '__main__':
